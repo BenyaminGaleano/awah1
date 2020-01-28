@@ -1,0 +1,100 @@
+.block {
+  display: block;
+  background-color: #a758f0;
+  color: black;
+  margin-top: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  width: 60%;
+}
+
+.block-nohighlight {
+  display: block;
+  background-color: #a758f0;
+  color: black;
+  margin-top: 1em;
+  border-radius: 1em;
+  padding: 1em;
+  width: 60%;
+}
+
+.block:hover {
+  background-color: red;
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.frame {
+  margin-top: 3%;
+  display: inline-block;
+  background-color: #a758f0;
+  color: black;
+  border-radius: 1em;
+  padding: 1em;
+  width: 99%;
+  margin-left: 5px;
+}
+
+.frame:hover {
+  background-color: red;
+  color: white;
+}
+
+.image {
+  border-radius: 1em;
+  border: medium;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.btn-bar {
+  display: block;
+  position: relative;
+  top: 0.5em;
+  padding: 1em;
+  width: 100%;
+  align-self: center;
+}
+
+.btn.outline {
+  background: none;
+}
+
+.btn-primary.outline:hover {
+  background-color: #1faa00;
+  color: white;
+}
+
+.btn-danger.outline:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn-primary.outline {
+  border: 2px solid #1faa00;
+  color: #1faa00;
+}
+
+.btn-danger.outline {
+  border: 2px solid red;
+  color: red;
+}
+
+#header-page {
+  width: 100%;
+  height: 10%;
+  background-color: #5c2874;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding-left: 1%;
+}

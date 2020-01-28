@@ -1,0 +1,105 @@
+$blockColor : rgb(167, 88, 240);
+$blockColorSelected: red;
+$buttonP: #1faa00;
+
+@mixin blck {
+    display: block;
+    background-color: $blockColor;
+    color: black;
+    margin-top: 1em;
+    border-radius: 1em;
+    padding: 1em;
+    width: 60%;
+}
+
+.block {
+    @include blck();
+}
+
+.block-nohighlight{
+    @include blck();
+}
+
+@mixin highlight{
+    background-color: $blockColorSelected;
+    color: white;
+}
+
+.block:hover{
+    @include highlight()
+}
+
+.title {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+.frame {
+    margin-top: 3%;
+    display: inline-block;
+    background-color: $blockColor;
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    width: 99%;
+    margin-left: 5px;
+}
+
+.frame:hover{
+    @include highlight()
+}
+
+.image {
+    border-radius: 1em;
+    border: medium;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+  }
+
+.btn-bar{
+    display: block;
+    position: relative;
+    top: .5em;
+    padding: 1em;
+    width: 100%;
+    align-self: center;
+}
+
+.btn.outline {
+	background: none;
+}
+
+.btn-primary.outline:hover{
+    background-color: $buttonP;
+    color: white;
+}
+
+.btn-danger.outline:hover{
+    background-color: $blockColorSelected;
+    color: white;
+}
+
+.btn-primary.outline {
+	border: 2px solid $buttonP;
+    color: $buttonP;
+}
+
+.btn-danger.outline {
+	border: 2px solid $blockColorSelected;
+    color: $blockColorSelected;
+}
+
+#header-page {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(92, 40, 116);
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    padding-left: 1%;
+}
